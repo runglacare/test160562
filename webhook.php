@@ -98,12 +98,11 @@ if(!is_null($events)){
                     $longitude = 100.61141967773438;
                     $replyData = new LocationMessageBuilder($placeName, $placeAddress, $latitude ,$longitude);
                     break;
-                case 'care':
-                    switch ($userMessage) {
-                        case "t":
-                            $careReplyMessage = "รุ้งลาวัลย์";
-                            $replyData = new TextMessageBuilder($careReplyMessage);
-                            break;
+                
+                case "care":
+                    $careReplyMessage = "รุ้งลาวัลย์";
+                    $replyData = new TextMessageBuilder($careReplyMessage);
+                    break;
                 case "s":
                     $stickerID = 22;
                     $packageID = 2;
